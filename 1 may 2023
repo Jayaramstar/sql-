@@ -1,0 +1,11 @@
+create table salesmen(
+name varchar(30) not null,
+city varchar(30) not null,
+commission float not null
+);
+insert into salesmen values("Jameshong","Newyork",0.15);
+insert into salesmen values("Nail Knite","Paris",0.13);
+insert into salesmen values("Pit Alex","London",0.11);
+insert into salesmen values("Mc Lyon","paris",0.14);
+insert into salesmen values("Paul Adom","Rome",0.13);
+insert into salesmen values("Lauson Hen","Newyork",0.12);
