@@ -1,11 +1,51 @@
-create table salesmen(
-name varchar(30) not null,
-city varchar(30) not null,
-commission float not null
+create table student(
+student_id int primary key not null,
+student_name varchar(30) not null,
+student_marks int not null
 );
-insert into salesmen values("Jameshong","Newyork",0.15);
-insert into salesmen values("Nail Knite","Paris",0.13);
-insert into salesmen values("Pit Alex","London",0.11);
-insert into salesmen values("Mc Lyon","paris",0.14);
-insert into salesmen values("Paul Adom","Rome",0.13);
-insert into salesmen values("Lauson Hen","Newyork",0.12);
+select * from student;
+insert into student values(111,"Jayaramstar",96);
+ 
+insert into student values(112,"star",95);
+ insert into student values(113,"Jayaram",50);
+
+ insert into student values(114,"Jay",96);
+ insert into student values(115,"ramstar",35);
+ insert into student values(116,"ram",28);
+ insert into student values(117,"Jaystar",56);
+ insert into student values(118,"Jaya",45);
+ insert into student values(119,"Jayanth",36);
+ insert into student values(120,"kingr",76);
+ select * from student where student_marks < 96;
+ select * from student where student_marks <= 96;
+ select * from student where student_marks >= 96;
+ select * from student where student_id < 115;
+ select * from student where student_marks != 96;
+ select * from student where student_marks <>96;
+ select * from student where student_marks between 70 and 80;
+ select * from student where student_marks between 50 and 96 order by student_marks;
+ select * from student where student_marks order by student_marks asc;
+ select * from student where student_marks order by student_marks;
+select * from student where not student_marks = 96;
+select * from rgm;
+select distinct address from rgm;
+select count(distinct address) from rgm;
+select count(distinct student_marks) from student;
+select * from student where not student_marks = 96 and not student_marks=91;
+select * from rgm limit 3;
+select * from rgm where address = 123 limit 2;
+select * from rgm where address = 123 limit 2;
+select * from rgm order by address = 123 limit 1;
+select * from rgm order by address = 123 limit 1;
+select count(address),address from rgm group by address;
+select * from rgm where college = "rgm" order by address limit 2; 
+
+create table dob(
+date_name date not null
+);
+insert into dob values ("2002-05-30");
+select * from dob;
+
+
+ 
+ 
